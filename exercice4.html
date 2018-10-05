@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="js/bootstrap.js"/>
+  <title>Exercice4</title>
+</head>
+<body>
+  <title>JsPartie1Exercice4</title>
+  <form name="changer">
+    <label for="lastname">Nom : </label><input type="text" name="lastname"  id="lastname"/>
+    <label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname"/>
+    <label for="city">Ville : </label><input type="text" name="city" id="city"/>
+    <button  name="submit" id="submit" onclick="show()">Valider</button>
+  </form>
+
+  <script type="text/javascript">
+  function show() {
+    var lastname = document.getElementById('lastname').value ;
+    var firstname = document.getElementById('firstname').value ;
+    var city = document.getElementById('city').value;
+    alert('Nom : '+ lastname + '\nPrénom : ' + firstname +'\nVille : '+ city);
+  }
+</script>
+</body>
+</html>
